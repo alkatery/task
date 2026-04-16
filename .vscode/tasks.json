@@ -1,0 +1,34 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Laravel: Serve",
+      "type": "shell",
+      "command": "php artisan serve --host=0.0.0.0 --port=8000",
+      "problemMatcher": [],
+      "isBackground": true,
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    },
+    {
+      "label": "React: Start",
+      "type": "shell",
+      "command": "npm start",
+      "options": { "cwd": "${workspaceFolder}/client" },
+      "problemMatcher": [],
+      "isBackground": true,
+      "presentation": { "reveal": "always", "panel": "dedicated" }
+    },
+    {
+      "label": "Run Both (Laravel + React)",
+      "dependsOn": ["Laravel: Serve", "React: Start"],
+      "dependsOrder": "parallel",
+      "problemMatcher": []
+    },
+    {
+      "label": "DB: Migrate Fresh + Seed",
+      "type": "shell",
+      "command": "php artisan migrate:fresh --seed",
+      "problemMatcher": []
+    }
+  ]
+}
