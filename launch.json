@@ -1,0 +1,15 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "React Frontend",
+      "runtimeExecutable": "C:/Program Files/nodejs/npm.cmd",
+      "runtimeArgs": ["start", "--prefix", "C:/Users/PC/Downloads/ops-platform/laravel-platform/client"],
+      "port": 3000,
+      "env": {
+        "BROWSER": "none",
+        "PATH": "C:/Program Files/nodejs;C:/Windows/system32;C:/Windows"
+      }
+    }
+  ]
+}
